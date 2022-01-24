@@ -29,7 +29,7 @@ class CalendarsController < ApplicationController
 
     plans = Plan.where(date: @todays_date..@todays_date + 6)
 
-
+    
     7.times do |x|
       today_plans = []
       plans.each do |plan|
@@ -40,4 +40,3 @@ class CalendarsController < ApplicationController
     end
   end
 end
-
